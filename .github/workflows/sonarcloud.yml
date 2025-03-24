@@ -2,7 +2,7 @@ name: SonarCloud Analysis
 on:
   push:
     branches:
-      - master  # 可根据需要调整分支
+      - main  # 可根据需要调整分支
   pull_request:
     types: [opened, synchronize, reopened]
 
