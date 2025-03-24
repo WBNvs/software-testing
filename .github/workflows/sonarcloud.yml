@@ -1,0 +1,17 @@
+name: SonarCloud Scan
+on:
+  push:
+    branches:
+      - main  # 触发分析的分支
+  pull_request:
+    types: [opened, synchronize, reopened]
+jobs:
+  sonarcloud:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub自动生成的Token
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}   # SonarCloud的Token
