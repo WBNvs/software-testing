@@ -1,0 +1,33 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://114.55.119.2:3306/ActivityManagement?useSSL=false
+    username: root
+    password: badbadbad
+  application:
+    name: activity-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        enabled: true
+        username: "nacos"
+        password: "nacos"
+    sentinel:
+      transport:
+        dashboard: localhost:8888
+        port: 8791
+      eager: true
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+minio:
+  endpoint: http://114.55.119.2:9000
+  accessKey: minio
+  secretKey: Tongjijava09
+  bucketName: person
