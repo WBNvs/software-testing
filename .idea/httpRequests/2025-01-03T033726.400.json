@@ -1,0 +1,6 @@
+{
+  "timestamp": "2025-01-02T19:37:26.532+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "path": "/activity/management"
+}

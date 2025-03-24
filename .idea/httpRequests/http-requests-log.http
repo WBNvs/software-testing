@@ -1,0 +1,42 @@
+GET http://localhost:10010/activity/management?activityStatus=NORMALContent-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:10010/activity/management?activityStatus=NORMAL
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+POST http://localhost:8083/activity/management?activityStatus=UerDlyj7
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-01-03T033726.400.json
+
+###
+
+GET http://localhost:10010/user/userInfo
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 78
+
+{
+  "userName": "",
+  "avatarUrl": "",
+  "contactInfo": "",
+  "isBan": false
+}
+
+###
+
